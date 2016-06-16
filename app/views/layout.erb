@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BookmarkManager</title>
+  </head>
+  <body>
+    <% if flash[:notice] %>
+    <div id='notice'><%=flash[:notice]%></div>
+    <% end %>
+    <%= yield %>
+  </body>
+</html>
